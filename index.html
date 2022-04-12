@@ -14,9 +14,27 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="top-bar-box">
-      <h class="top-bar-text">大特價至4月15日！最低一折，請把握機會～</h>
-      <button class="top-bar-btn">確認</button>
+    <div class="top-menu-box">
+      <ul>
+        <ol>
+          <a class="menu-link" href="#buy-box">商品介紹</a>
+        </ol>
+        <ol>
+          <a class="menu-link" href="#">周邊商品</a>
+        </ol>
+        <ol>
+          <a class="menu-link" href="#testimonial-text">使用心得</a>
+        </ol>
+        <ol>
+          <a class="menu-link" href="#">使用社群</a>
+        </ol>
+      </ul>
+    </div>
+    <div class="top-reccommendation-box">
+      <h class="top-reccommendation-text"
+        >大特價至4月15日！最低一折，請把握機會～</h
+      >
+      <button class="top-reccommendation-btn">確認</button>
     </div>
     <header>
       <div class="header-textBox">
@@ -343,17 +361,93 @@
       </article>
       <img class="overlay-img" src="img/brightOutside2.jpg" />
     </section>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="testimonial-change-icon"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M13 5l7 7-7 7M5 5l7 7-7 7"
+      />
+    </svg>
     <section class="testimonial">
-      <img class="testimonial-img" src="img/Evana.jpeg" />
-      <div class="testimonial-text">
+      <!-- <div class="testimonial-content--1"> -->
+      <img
+        class="testimonial-img testimonial-content testimonial-content--0"
+        src="img/Evana.jpeg"
+      />
+      <div
+        class="testimonial-text testimonial-content testimonial-content--0"
+        id="testimonial-text"
+        testimonial-content--1
+      >
         <h1 class="testimonial-title">大園嬰兒專家</h1>
         <p class="testimonial-description">
           自從換了超級折疊嬰兒車後，不僅節省汽車空間，收納方便，更重要的是我能夠一手嬰兒一手收納了！我是一個孩子的媽，體驗過超牛頓省力之後，再也感覺不到肩緊痠痛了！身為一個嬰兒車專家，極力推薦最新款RTX-666款。
         </p>
         <a class="author">陳心怡</a>
       </div>
+      <!-- content2 -->
+      <img
+        class="testimonial-img testimonial-content-hidden testimonial-content testimonial-content--1"
+        src="img/happyBaby.jpg"
+      />
+      <div
+        class="testimonial-text testimonial-content-hidden testimonial-content testimonial-content--1"
+        id="testimonial-text"
+      >
+        <h1 class="testimonial-title">中壢嬰兒專家</h1>
+        <p class="testimonial-description">
+          fsfjdofowi weifojwio fwiod fiw jfiowj fiowj ofwjfowjof jwof jwo
+          jfowafjs lvj lsnvwklfwofwoe fwo hfowh woehfowehf owehfios hfos
+          foiwhioahfksnxnzv,mnvwfhwo wo w h,
+        </p>
+        <a class="author">Fucker</a>
+      </div>
+      <!-- content2 -->
+      <!-- content3 -->
+      <img
+        class="testimonial-img testimonial-content-hidden testimonial-content testimonial-content--2"
+        src="img/romance.jpg"
+      />
+      <div
+        class="testimonial-text testimonial-content-hidden testimonial-content testimonial-content--2"
+        id="testimonial-text"
+      >
+        <h1 class="testimonial-title">國小老師</h1>
+        <p class="testimonial-description">
+          fsfjdofowi weifojwio fwiod fiw jfiowj fiowj ofwjfowjof jwof jwo
+          jfowafjs lvj lsnvwklfwofwoe fwo hfowh woehfowehf owehfios hfos
+          foiwhioahfksnxnzv,mnvwfhwo wo w h,
+        </p>
+        <a class="author">Fucker</a>
+      </div>
+      <!-- contnet3 -->
+      <!-- contnet4 -->
+      <img
+        class="testimonial-img testimonial-content-hidden testimonial-content testimonial-content--3"
+        src="img/rainboy.jpg"
+      />
+      <div
+        class="testimonial-text testimonial-content-hidden testimonial-content testimonial-content--3"
+        id="testimonial-text"
+      >
+        <h1 class="testimonial-title">台北育幼權威</h1>
+        <p class="testimonial-description">
+          fsfjdofowi weifojwio fwiod fiw jfiowj fiowj ofwjfowjof jwof jwo
+          jfowafjs lvj lsnvwklfwofwoe fwo hfowh woehfowehf owehfios hfos
+          foiwhioahfksnxnzv,mnvwfhwo wo w h,
+        </p>
+        <a class="author">Fucker</a>
+      </div>
+      <!-- contnet4 -->
     </section>
-    <div class="buy-box">
+    <div class="buy-box" id="buy-box">
       <div class="buy-container">
         <img class="buy-img" src="img/beta.jpg" />
         <h1 class="buy-title">BETA-123款</h1>
@@ -532,6 +626,8 @@
         </div>
       </div>
     </div>
+
+    <footer>waiting to fill</footer>
     <!-- <aside>copyright</aside> -->
     <script src="script.js"></script>
   </body>

@@ -6,7 +6,7 @@
 body {
   font-family: 'Noto Sans TC', sans-serif;
   color: #343a40;
-  padding-bottom: 100px;
+  padding-bottom: 0;
 }
 header {
   width: 1000px;
@@ -95,7 +95,7 @@ section {
   justify-content: space-around;
   /* gap: 60px; */
   margin-top: 240px;
-  margin-bottom: 120px;
+  margin-bottom: 240px;
   /* justify-content: center; */
 }
 .feature-detail-box {
@@ -134,9 +134,10 @@ article p {
 .testimonial {
   width: 800px;
   height: 180px;
-  margin-bottom: 100px;
+  margin-bottom: 400px;
+  margin-top: 400px;
   border-radius: 20px;
-  background-color: #ffe8cc;
+  background-color: #ffdeeb;
 }
 
 .testimonial-box {
@@ -167,11 +168,27 @@ article p {
   font-size: 16px;
 }
 
+.testimonial-content-hidden {
+  display: none;
+}
+
+.testimonial-change-icon {
+  position: absolute;
+  top: 1680px;
+  left: 1250px;
+  width: 60px;
+  height: 60px;
+  /* fill: #d6336c; */
+  color: #e64980;
+  cursor: pointer;
+}
+
 /* BUY CARD  */
 .buy-box {
   display: flex;
   width: 900px;
   margin: auto;
+  margin-bottom: 120px;
   justify-content: space-around;
 }
 .buy-container {
@@ -245,24 +262,28 @@ strong {
     background-color: #ffe8cc;
   } */
 
-/* TOP-BAR /// */
+/* TOP-reccommendation /// */
 
-.top-bar-box {
+.top-reccommendation-box {
   height: 82px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 
   background-color: #f8f0fc;
+
+  position: fixed;
+  bottom: 0;
 }
-.top-bar-text {
+.top-reccommendation-text {
   font-size: 28px;
   font-weight: 400;
   color: #495057;
 }
 
-.top-bar-btn {
+.top-reccommendation-btn {
   background-color: #faa2c1;
   color: #a61e4d;
   height: 42px;
@@ -276,3 +297,40 @@ strong {
 .top-bar-btn:hover {
   box-shadow: 0 0 3px 0 #a61e4d;
 }
+
+/* TOP-menu-bar */
+.top-menu-box {
+  background-color: #fcc2d7;
+  height: 64px;
+}
+.top-menu-box ul {
+  display: flex;
+  justify-content: center;
+  height: 64px;
+  gap: 40px;
+
+  align-items: center;
+}
+.top-menu-box ol a {
+  font-size: 20px;
+  padding: 5px 5px;
+  color: #a61e4d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.top-menu-box ol a:hover {
+  background-color: #d6336c;
+  color: white;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  height: 320px;
+  background-color: #ffe3e3;
+}
+
+/* .testimonial {
+  background-color: #ffc9c9;
+} */
