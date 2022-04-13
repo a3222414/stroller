@@ -265,7 +265,8 @@ strong {
 /* TOP-reccommendation /// */
 
 .top-reccommendation-box {
-  height: 82px;
+  z-index: 10;
+  height: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -292,13 +293,20 @@ strong {
   border: none;
   cursor: pointer;
 }
-
+.top-reccommendation-btn:hover {
+  box-shadow: 0 0 5px 0 #d6336c;
+}
 .top-bar-btn:visited,
 .top-bar-btn:hover {
   box-shadow: 0 0 3px 0 #a61e4d;
 }
 
 /* TOP-menu-bar */
+.sticky {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+}
 .top-menu-box {
   background-color: #fcc2d7;
   height: 64px;
@@ -325,6 +333,9 @@ strong {
   border-radius: 5px;
 }
 
+.menu-link.opacity {
+  opacity: 0.5;
+}
 /* FOOTER */
 footer {
   height: 320px;
