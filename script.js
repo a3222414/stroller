@@ -117,3 +117,61 @@ testimonialIcon.addEventListener('click', function (el) {
     });
   testimonial.style.backgroundColor = testimonialBackgroundColor[changeNum];
 });
+
+//// photo slide
+const rightArrow = document.querySelector('.right-change');
+const leftArroow = document.querySelector('.left-change');
+const photoContainers = document.querySelectorAll('.photo-container');
+console.log(photoContainers);
+console.log(photoContainers.length); //之後加照片都自動改數量
+let countslide = 0;
+photoContainers.forEach(
+  (photo, index) => (photo.style.transform = `translateX(${index * 100}%)`)
+);
+const rightSlide = function () {
+  if (countslide === photoContainers.length - 1) {
+    countslide = 0;
+  } else countslide++;
+
+  photoContainers.forEach(
+    (photo, index) =>
+      (photo.style.transform = `translateX(${(index - countslide) * 100}%)`)
+  );
+};
+const leftSlide = function () {
+  if (countslide === 0) {
+    countslide = photoContainers.length - 1;
+  } else countslide--;
+
+  photoContainers.forEach(
+    (photo, index) =>
+      (photo.style.transform = `translateX(${(index - countslide) * 100}%)`)
+  );
+};
+rightArrow.addEventListener('click', function () {
+  rightSlide();
+});
+
+leftArroow.addEventListener('click', function () {
+  leftSlide();
+});
+
+// sections emerge
+
+const mergeCallback = function (entries, observer) {
+  const [entry] = entries;
+  const section = entry.target;
+  if (entry.isIntersecting === true) {
+    section.classList.remove('merge');
+    observer.unobserve(entry.target);
+  } else return;
+};
+const mergeObserver = new IntersectionObserver(mergeCallback, {
+  root: null,
+  rootMargin: '100px',
+  threshold: 0,
+});
+
+const sectionAll = document.querySelectorAll('section');
+sectionAll.forEach((section) => mergeObserver.observe(section));
+// mergeObserver.observe(buyBox);

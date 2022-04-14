@@ -15,6 +15,7 @@ header {
   background-color: #fff0f6;
   /* margin-bottom: 160px; */
   margin-top: 0px;
+  margin-bottom: 400px;
   display: flex;
 }
 
@@ -94,9 +95,12 @@ section {
   display: flex;
   justify-content: space-around;
   /* gap: 60px; */
-  margin-top: 240px;
-  margin-bottom: 240px;
+  margin-top: 0px;
+  margin-bottom: 340px;
   /* justify-content: center; */
+}
+.feature-container {
+  margin-top: 300px;
 }
 .feature-detail-box {
   width: 300px;
@@ -132,10 +136,11 @@ article p {
 
 /* TESTIMONIAL */
 .testimonial {
+  position: relative;
   width: 800px;
   height: 180px;
-  margin-bottom: 400px;
-  margin-top: 400px;
+  margin-bottom: 200px;
+  margin-top: 50px;
   border-radius: 20px;
   background-color: #ffdeeb;
 }
@@ -164,7 +169,8 @@ article p {
   margin-bottom: 6px;
 }
 .author {
-  margin-left: 460px;
+  margin-left: 440px;
+  letter-spacing: 0;
   font-size: 16px;
 }
 
@@ -174,14 +180,64 @@ article p {
 
 .testimonial-change-icon {
   position: absolute;
-  top: 1680px;
-  left: 1250px;
+  top: 60px;
+  right: -70px;
   width: 60px;
   height: 60px;
   /* fill: #d6336c; */
   color: #e64980;
   cursor: pointer;
 }
+/* Section3 */
+.section3 {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  margin: 100px auto;
+
+  /* display: flex; */
+  justify-content: center;
+
+  overflow: hidden;
+}
+.photo-container {
+  position: absolute;
+  top: 0;
+  transition: transform 1s;
+}
+
+.photo-change {
+  width: 800px;
+  height: auto;
+}
+/* .photo-container {
+  overflow: hidden;
+} */
+.right-change {
+  position: absolute;
+  /* z-index: 10; */
+  cursor: pointer;
+  top: 220px;
+  right: 30px;
+  width: 50px;
+  background-color: white;
+  border-radius: 100px;
+}
+.left-change {
+  position: absolute;
+  /* z-index: 10; */
+  cursor: pointer;
+  top: 220px;
+  left: 30px;
+  width: 50px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+/* .photo-change {
+  width: 100px;
+} */
+/* section3 */
 
 /* BUY CARD  */
 .buy-box {
@@ -345,3 +401,14 @@ footer {
 /* .testimonial {
   background-color: #ffc9c9;
 } */
+
+/* merge */
+section {
+  transition-timing-function: linear;
+  transition-duration: 1s;
+}
+.merge {
+  transform: translateY(50px);
+  opacity: 0;
+}
+/* merge */
