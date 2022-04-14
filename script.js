@@ -174,4 +174,4 @@ const mergeObserver = new IntersectionObserver(mergeCallback, {
 
 const sectionAll = document.querySelectorAll('section');
 sectionAll.forEach((section) => mergeObserver.observe(section));
-// mergeObserver.observe(buyBox);
+mergeObserver.observe(buyBox);
